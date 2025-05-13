@@ -1,0 +1,186 @@
+.astro-container {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+  }
+  
+  .sidebar {
+    flex: 1 1 200px;
+    max-width: 250px;
+    background: #fff;
+  }
+  
+  .sidebar-section {
+    margin-bottom: 1rem;
+    background: #f7f7f7;
+    padding: 1rem;
+    border: 1px solid #eee;
+  }
+  
+  .sidebar-section h3 {
+    background-color: orange;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+  }
+  
+  .sidebar-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-section li {
+    margin: 0.5rem 0;
+  }
+  
+  .products-section {
+    flex: 3 1 600px;
+  }
+  
+  .products-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+  
+  .filters span, .filters select {
+    margin: 0 0.5rem;
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    background: #fff;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-card h4 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .product-card p {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Exactly 3 items per row */
+    gap: 1rem;
+  }
+  /* Responsive adjustments */
+@media (max-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row on medium screens */
+  }
+
+  .products-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filters {
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .astro-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr); /* Still 2 on tablets */
+  }
+
+  .whatsapp-button {
+    bottom: 15px;
+    right: 15px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: 1fr; /* 1 item per row on small screens */
+  }
+
+  .filters span,
+  .filters select {
+    display: block;
+    margin: 0.25rem 0;
+  }
+
+  .products-header {
+    align-items: stretch;
+  }
+}
+.faq-container {
+  /* border: 2px solid red; */
+  padding: 20px;
+  max-width: 90%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.faq-question {
+  background-color: orange;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.faq-answer {
+  padding: 15px;
+  background-color: #f9f9f9;
+  color: #333;
+  border-top: 1px solid #ddd;
+}

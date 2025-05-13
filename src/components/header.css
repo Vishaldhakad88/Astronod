@@ -1,0 +1,122 @@
+/* Custom navbar background */
+.custom-navbar {
+  background-color:white !important; /* Black background */
+  color: black; /* White text */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  margin-left: -8px;
+}
+.navbar1{
+  background-color: red;
+}
+/* Brand styling */
+.navbar-brand {
+  font-size: 45px;
+  font-family: monospace;
+  font-weight: 500;
+  color: black !important; /* White color */
+  transition: transform 0.3s ease;
+}
+
+.astro-span {
+  color: orange;
+  font-size: 30px;
+}
+
+/* Nav links */
+.nav-link {
+  color: black !important; /* White text for nav links */
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative; 
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: orangered;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: orangered !important; /* Hover effect for nav links */
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Toggler styles */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-image: none;
+  width: 24px;
+  height: 2px;
+  background-color: orangered;
+  display: block;
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: orangered;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon::after {
+  top: 8px;
+}
+
+/* Search button */
+.btn-outline-success {
+  background-color: orangered;
+  border: 1px solid orangered;
+}
+
+.btn-outline-success:hover {
+  background-color: orange;
+  border-color: orange;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .navbar-nav {
+    margin-top: 1rem;
+    gap: 0.5rem;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+    padding-left: 1rem;
+  }
+}
+
+.nav-link::after {
+  background-color: orange; /* or any bright color */
+}
+
+.astro-span {
+  color: orange;
+}
+

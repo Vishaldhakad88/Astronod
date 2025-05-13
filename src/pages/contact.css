@@ -1,0 +1,113 @@
+center{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px;
+}
+.underLine{
+    display: flex;
+    margin: auto;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  height: 4px;
+  background-color: orangered;
+  width: 150px;
+}
+.InquiryBtn h1 span{
+    color: rgb(231, 50, 50);
+    
+   }
+   .InquiryBtn p{
+       text-align: start;
+   }
+   
+    /* inquiry section --------------- */
+   
+    .Inquiry{
+       background-color: black;
+       color: white;
+       margin-top: 20px;
+       width: 100%;
+   }
+   .Inquiry span{
+       color: rgb(232, 37, 37);
+   }
+   
+   
+   .Inquiry{
+       background-color: rgb(234, 233, 233);
+       margin-top: 20px;
+       color: black;
+       width: 100%;
+   }
+   
+   
+   .Inquiry .InquiryBox{
+       display: flex;
+     flex-direction: row;
+     font-size: 30px;
+     text-align: center;
+   }
+   .Inquiry .InquiryImg{
+       /* background-color: #f1f1f1; */
+     padding: 10px;
+     flex: 50%;
+   }
+   
+   .Inquiry .InquiryForm{
+       /* background-color: dodgerblue; */
+       padding: 20px;
+       flex: 50%;
+       font-size: 20px;
+       text-align: start;
+     }
+   
+     .Inquiry .InquiryForm input{
+      background: transparent;
+      margin-top: 10px;
+      border-radius: 20px;
+      padding: 10px;
+      width: 100%;
+      color: black;
+      border: 2px solid red;
+     }
+   
+     .Inquiry .InquiryForm button{
+      width: 100%;
+      background-color: red;
+      color: white;
+      border-radius: 10px;
+      border-style: none;
+     }
+     .Inquiry .InquiryForm button:hover{
+       background-color: blue;
+       border-radius: 10px;
+      width: 100%;
+     }
+     @media (max-width: 800px) {
+       .Inquiry .InquiryBox {
+         flex-direction: column;
+       }
+     }
+     .Inquiry .InquiryImg img{
+       border-radius: 20px;
+       width: 550px;
+       height: 400px;
+       margin-top: 20px;
+   }
+   
+   @media (max-width: 480px) { 
+       .Inquiry .InquiryBox img{
+           width: 300px;
+           height: 200px; 
+          }
+   
+           .Inquiry .InquiryForm button{
+             padding: 10px;  
+             width: 100%;
+             background-color: red;
+             color: white;
+             display:inline;
+             border-radius: 10px;
+           }
+         
+   }

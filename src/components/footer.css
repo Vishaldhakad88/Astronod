@@ -1,0 +1,124 @@
+.footer {
+    background-color: black;
+    color: #282626;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .appName {
+    display: flex;
+    flex-direction: column;
+    background-color: #282626;
+    color: #ffffff;
+    align-items: center;
+    gap: 15px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .appName h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .appName p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .appName button {
+    background: none;
+    border: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    padding: 8px 12px;
+    margin: 5px 0;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .appName button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: orange;
+  }
+  
+  .appName .cityBtn {
+    background-color: orange;
+    font-weight: 500;
+    color: white;
+    padding: 10px;
+    border-radius: 40px;
+    width: 220px;
+    margin-top: 10px;
+    border: none;
+  }
+  
+  .appName .cityBtn:hover {
+    background-color: orangered;
+    box-shadow: 1px 1px 10px 1px yellow;
+  }
+  
+  .appName .media i {
+    font-size: 1.5rem;
+    margin: 0 8px;
+    color: #ffffff;
+    transition: color 0.3s;
+  }
+  
+  .appName .media i:hover {
+    color: orange;
+  }
+  
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: #444;
+    margin: 20px 0;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .appName h1 {
+      font-size: 2rem;
+    }
+  
+    .appName p,
+    .appName pre {
+      font-size: 0.95rem;
+      padding: 0 10px;
+    }
+  
+    .appName .cityBtn {
+      width: 180px;
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .appName h1 {
+      font-size: 1.8rem;
+    }
+  
+    .appName p,
+    .appName  {
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  
+    .appName button {
+      font-size: 0.9rem;
+    }
+  
+    .appName .cityBtn {
+      width: 160px;
+      padding: 8px;
+    }
+  
+    .appName .media i {
+      font-size: 1.3rem;
+    }
+  }
+  

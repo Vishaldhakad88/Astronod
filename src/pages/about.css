@@ -1,0 +1,36 @@
+.responsive-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .image-section, .text-section {
+    flex: 1 1 300px; /* grows and shrinks with minimum width of 300px */
+  }
+  
+  .responsive-image {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .text-section {
+    text-align: left;
+  }
+  
+  @media (max-width: 768px) {
+    .responsive-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .text-section {
+      text-align: center;
+    }
+  }
+  

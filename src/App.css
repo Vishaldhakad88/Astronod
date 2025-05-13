@@ -1,0 +1,824 @@
+/* Prevent horizontal overflow */
+body {
+    overflow-x: hidden;
+  }
+  
+  /* Allow vertical scrolling if needed */
+  body {
+    overflow-y: auto;
+  }
+  
+/* navBar section ------+--------- */
+.navbar{
+padding: 5px;
+background-color: black;
+gap: 8vw;
+display: flex;
+}
+
+.navbar a{
+  color: white;
+}
+@media (max-width: 1300px) { 
+    .navbar{
+        display:none;
+    }
+}
+
+
+/* second navbar --------+----------- */
+.icon{
+    font-size: 25px;
+    color: white;
+    margin-left: 50px;
+    cursor: pointer; 
+}
+
+.contect{
+    color: white;
+    font-size: 25px;
+}
+.contect span{
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn{
+    color: white;
+    font-size: 25px;
+}
+
+
+.navbar1
+{
+    padding: 5px;
+    background-color: white;
+    gap: 8vw;
+    margin-left: 50px;
+    display: flex; 
+      
+}
+
+.logo{
+    width: 150px;
+    margin-left: 15px;
+}
+.navbar1 li{
+    font-size: 16px;
+    display: flex;
+    margin: 8px;
+}
+
+.navbar1 i{
+    color: red;
+    font-size: 20px;
+    margin: 3px;
+}
+
+
+/* image slider ---------+------- */
+.container img{
+    width: 100%;
+}
+.left-btn, .right-btn{
+    position: absolute;
+    top: 80%;
+}
+.container .slider button{
+background: transparent ;
+border-radius: 50%;
+width: 50px;
+height: 50px;
+font-size: 30px;
+color: white;
+border: 2px solid red;
+}
+@media (max-width: 1300px) { 
+    .container button{
+        display:none;
+    }
+    
+}
+
+.left-btn{
+    left: 150px;
+}
+.right-btn{
+    right: 150px;
+}
+
+.keypoint{
+width: 250px;
+height: 200px;
+/* background-color: aqua; */
+display: flex;
+margin-right: 10px;
+/* border: 2px solid black; */
+}
+.keypoint .small{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: -75px;
+    margin-left: -31px;
+    background-color: blue;
+    
+}
+.keypoint .small3{
+    margin-top: -95px;
+
+}
+.keypoint .big{
+    width: 400px;
+    height: 110px;
+    /* border-radius: 20%; */
+    background-color: red;
+    margin-left: 30px;
+    margin-top: 50px;
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+}
+.keypoint .big .text{
+    margin-top: 20px;
+    color: white;
+    margin-left: 15px;
+    
+}
+.counting-bg{
+    background-image: url(https://t3.ftcdn.net/jpg/03/28/82/42/360_F_328824244_h8ln41Hd3sh985TASxWVMmZ2w5LYSYvz.jpg);
+    width: 100%;
+    height: 250px;
+    /* filter: blur(3px); */    
+    border: 2px solid gray;
+    
+}
+
+@media (max-width: 1300px) { 
+    .counting-bg h1{
+        font-size: 25px;
+        margin-top: -30px;
+    }
+}
+
+@media (max-width: 1000px) { 
+    .counting-bg{
+        height: 400px;
+
+    }
+}
+
+.counting-bg .experience
+{
+    margin-top: 60px;
+    margin-left: 30px;
+    color: red;
+}
+
+/* Placements section --------+--------------- */
+.placements{
+    margin-top: 30px;
+    background-color: rgb(245, 169, 169);
+}
+.placements .cards{
+margin-left: 75px;
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+}
+.placements .card{
+    width: 250px;
+    height: 270px;
+    border: 2px solid red;
+    border-radius: 25px;
+    margin: 25px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.placements .card img{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+border: 2px solid black;
+padding: 5px;
+}
+.placements .card .name{
+color: red;
+margin-top: 10px;
+}
+
+
+.placements .card .company{
+    font-weight: bold;
+}
+
+@media (max-width: 600px) { 
+    .placements .cards{
+        display: block;
+        margin-left: 10px;
+    }
+}
+.topcourses{
+    background-color:rgb(61, 59, 59);
+    color: white;
+    width: 100%;
+    height: 500px;
+    
+}
+.topcourses h1{
+    text-align: center;
+}
+.topcoursesBox{
+    width: 150px;
+    height: 300px;
+    border: 2px solid red;
+    border-radius: 25px;
+    background-color: white;
+    margin-top: 60px;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.topcoursesBox img{
+    margin-left: 100px;
+}
+
+@media (max-width: 600px) { 
+    .topcoursesBox img{
+        margin-left: 120px;
+    }
+}
+
+
+.mainbox{
+    width: 70%;
+    /* background-color: chartreuse; */
+    margin-left: 160px;
+}
+
+@media (max-width: 480px) { 
+    .mainbox{
+        margin-left: 60px;
+    }
+    .mainbox img{
+        margin-left: 65px;
+    }
+}
+
+
+/* What our Students Say!------------------------------- */
+/* section---- */
+.Say{
+    background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyn919AtV-G8l_Jm1oPsNg-g2ofkGT2Egrmg&s);
+    padding: 40px;
+    text-align: center;
+
+}
+.Say h1{
+    font-weight: bold;
+    color: white;
+}
+
+.SayBox{
+    height: 450px;
+    border-radius: 20px;
+    /* background-color: red; */
+    color: white;
+    border: 8px double white;
+    padding: 10px;
+ 
+    
+}
+.SayBox img{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    padding: 10px;
+    margin-left: 150px;
+}
+.SayBox i{
+   color: orange;
+   font-size: 25px;
+}
+.SayBox h3{
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(244, 244, 8);
+  font-weight: bold;
+   font-size: 25px;
+}
+.SayBox h4{
+  font-family: 'Times New Roman', Times, serif;
+  color: orangered;
+  font-weight: bolder;
+   font-size: 30px;
+}
+@media (max-width: 480px) { 
+    .SayBox img{
+        display: block;
+        margin-left: 80px;
+    }
+}
+
+/* companies section --------------------------- */
+.companies{
+  height: 750px;
+  background: linear-gradient(to left,rgb(123, 115, 115),rgb(136, 98, 98),rgb(113, 100, 76));
+}
+.companies .head{
+    font-size: 50px;
+    font-weight: bold;
+    padding: 20px;
+    color: white;
+}
+.companies .head span{
+  color: rgb(237, 22, 22);
+}
+
+.companyBox img{
+width: 150px;
+margin: 10px;
+margin-left: 10px;
+border-radius: 10px;
+}
+.companyBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 480px) { 
+    .companies{
+        height: 1700px;
+    }
+}
+
+/* welcome section ----------------- */
+.welcome{
+    /* background-color: rgb(245, 169, 169); */
+    margin-top: 20px;
+    width: 100%;
+}
+.welcome .line{
+    width: 300px;
+    height: 5px;
+    margin-left: 500px;
+    background-color: red;
+}
+@media (max-width:480px) {
+    .welcome .line{
+        width: 250px;
+        height: 4px;
+        margin-left: 60px;
+    }
+}
+.welcome .WelcomeBox{
+    display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.welcome .Welcomeimg img{
+    /* background-color: #f1f1f1; */
+  padding: 10px;
+  border-radius: 20px;
+  flex: 50%;
+}
+.WelcomeBox ul li::marker {
+    color: red;
+  }
+.welcome .WelcomePara
+{
+    /* background-color: dodgerblue; */
+    padding: 10px;
+    flex: 50%;
+    font-size: 20px;
+    text-align: start;
+  
+}
+
+@media (max-width: 480px) {
+    .welcome .WelcomeBox {
+      flex-direction: column;
+    }
+  }
+
+@media (max-width: 480px) {
+    .welcome .WelcomeBox img {
+        width: 300px;
+        height: 200px;
+    }
+  }
+
+/* Why Join Us? ========== section ---------------------------- */
+.join{
+    background-color: rgb(245, 169, 169);
+    margin-top: 20px;
+    width: 100%;
+}
+.join .line{
+    width: 300px;
+    height: 5px;
+    margin-left: 500px;
+    background-color: red;
+}
+
+@media (max-width:480px) {
+    .join .line{
+        width: 250px;
+        height: 4px;
+        margin-left: 60px;
+    }
+}
+
+.join .joinBox{
+    display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+.join .imgbox{
+    /* background-color: #f1f1f1; */
+  padding: 10px;
+  flex: 50%;
+}
+
+.join .parabox{
+    /* background-color: dodgerblue; */
+    padding: 10px;
+    flex: 50%;
+    font-size: 20px;
+    text-align: start;
+  }
+
+  @media (max-width: 800px) {
+    .join .joinBox {
+      flex-direction: column;
+    }
+  }
+  .join .joinBox img{
+    border-radius: 20px;
+    width: 550px;
+    height: 400px;
+    margin-top: 20px;
+}
+
+@media (max-width: 480px) { 
+    .join .joinBox img{
+        width: 300px;
+        height: 200px;  }
+}
+
+.parabox ul li::marker {
+    color: red;
+  }
+  .joinBox .hr{
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+    background-color: red;
+  }
+
+ 
+/* 
+.InquiryMap{
+    background-color: aliceblue;
+    box-shadow: 2px 2px 10px 3px red;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 100%;
+    height: 350px;
+    color: black;
+    text-align: start;
+}
+.adrs{
+    margin-left: 25px;
+    padding: 10px;
+    flex: 50%;
+    font-size: 20px;
+    text-align: start;
+  
+}
+.adrs span{
+    color: brown;
+}
+
+@media (max-width: 800px) {
+    .InquiryMap{
+      flex-direction: column;
+    }
+  }
+.adrs .loc{
+    border-radius: 20px;
+    width: 550px;
+    height: 400px;
+    margin-top: 20px;
+} */
+
+/* footer section ===================== */
+/* General Styles */
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .box1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .box1 img {
+    max-width: 150px;
+    height: auto;
+    flex: 1 1 100%;
+    margin-bottom: 10px;
+  }
+  
+  .box1 b {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .box1 i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    padding: 5px;
+    color: #007bff;
+  }
+  
+
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .box1 {
+      flex-direction: column;
+      align-items: center;
+    }
+}
+  
+    .box1 b {
+      text-align: center;
+      font-size: 1rem;
+    }
+  
+    .box1 i {
+      font-size: 1.2rem;
+      margin-right: 8px;
+      margin-left: 10px;
+      color: red;
+    }
+  
+    .box1 span {
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+  @media (max-width: 576px) {
+    .box1 b {
+      font-size: 0.9rem;
+    }
+  
+    .box1 i {
+      font-size: 1.3rem;
+      margin-right: 5px;
+    }
+  
+    .box1 span {
+      font-size: 0.9rem;
+    }
+  }
+  .box2 span
+  {
+    padding: 20px;
+  }
+
+  /* About us page css ---------------------------- */
+  .AboutUs .redLine
+  {
+    width: 300px;
+    height: 5px;
+    background-color: red;
+  }
+  .AboutUs p{
+    text-align: start;
+    margin-top: 40px;
+  }
+  .AboutUs .head1{
+    text-align: start;
+    color: red;
+    font-weight: bolder;
+  }
+  .AboutUs .head2{
+    text-align: start;
+    color: red;
+    font-weight: bolder;
+  }
+  .AboutUs .OurTeam{
+    width: 100%;
+    height: 400px;
+    background-color: #333;
+  }
+  .AboutUs .OurTeam .heding{
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  }
+  .AboutUs .OurTeam span{
+  color: rgb(193, 24, 24);
+  }
+  .AboutUs .OurTeam center{
+  color: white;
+  }
+  @media (max-width: 576px) {
+    .AboutUs .OurTeam center {
+      text-align: center;
+      font-size: 12px
+    }
+}
+
+/* about our team cards section ******************** */
+.AboutUs .OurTeam .cards{
+    display: flex;
+   gap: 10px;
+   margin-top: 20px;
+   margin-left: 120px;
+    }
+.AboutUs .OurTeam .cards img{
+    width: 80px;
+    height: 80px;
+    margin-left: 85px;
+    margin-top: 10px;
+    }
+.AboutUs .OurTeam .cards .name{
+    color: red;
+    font-weight: bold;
+    }
+.AboutUs .OurTeam .cards .position{
+    font-weight: bold;
+    color:#333;
+    }
+.AboutUs .OurTeam .cards .experience{
+    font-size: 15px;
+    color:#333;
+    }
+    
+.AboutUs .OurTeam .cards button{
+    font-size: 20px;
+    }
+
+    @media (max-width:480px){
+        .AboutUs .OurTeam .cards{
+            display:grid;
+            margin-left: 10px;
+            
+        }
+    }
+    
+    @media (max-width:480px){
+        .AboutUs .OurTeam .card{
+            padding: 20px;
+        }
+    }
+    @media (max-width:480px){
+        .AboutUs .OurTeam .card img{
+            margin-left: 90px;
+        }
+    }
+    
+    @media (max-width:480px){
+        .AboutUs .OurTeam .cards button{
+            display:flex;
+            width: 100%;
+            height: 40px;
+            gap: 10px;
+
+        }
+    }
+
+    @media (max-width:480px){
+        .AboutUs .OurTeam{
+            width: 100%;
+            height: 1000px;
+            background-color: #333;
+        }
+    }
+
+    /* Our Courses   section -------------- */
+    
+    .CoursesHed{
+        font-size: 45px;
+        font-weight: bold;
+    }
+    .CoursesHed span{
+        font-size: 45px;
+        font-weight: bold;
+        color: rgb(231, 24, 24);
+    }
+.coursesHeading {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    max-width: 100%;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;   
+}
+
+
+.headingboximg img {
+    width: 120px; 
+    height: 120px;
+    margin-right: 10px;
+}
+
+.headingboxtext {
+    flex-grow: 1;
+    text-align: left;
+    background-color: #007bff; 
+    width: 100%;
+    height: 70px;
+    padding: 15px;
+    font-size: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .coursesHeading {
+        width: 100%;
+        margin-left: 10px;
+    }
+    .headingboximg img {
+        width: 80px; 
+        height: 80px;
+    }    
+    .headingboxtext {
+    padding: 5px 20px 8px;
+    }
+    
+}
+
+ /* our courses cards css ============= with responsive design---- */
+
+ .CoursesCard .cards{
+    display: flex;
+   gap: 50px;
+   margin-top: 20px;
+   margin-left: 120px;
+   word-break: break-all;
+    }
+    .CoursesCard .card{
+     width: 300px;
+     height: 280px;
+     text-align: center;
+     align-items: center;
+     font-size: 16px;
+     background-color: #eff4f3;
+    }
+.CoursesCard .cards img{
+    width: 80px;
+    height: 80px;
+    /* margin-left: 70px; */
+    margin-top: 10px;
+    }
+.CoursesCard .cards .title{ 
+    padding: 20px;
+    font-weight: bold;
+    }
+    
+.CoursesCard .cards button{
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: 150px;
+    /* margin-left: 40px; */
+    }
+
+    @media (max-width:480px){
+        .CoursesCard .cards{
+            display:grid;
+            margin-left: 10px;
+            
+        }
+    }
+    
+    @media (max-width:480px){
+        .CoursesCard .card{
+            padding: 20px;
+        }
+    }
+    
+    @media (max-width:480px){
+        .CoursesCard .cards button{
+            display:flex;
+            width: 100%;
+            height: 50px;
+            gap: 10px;
+            width: 150px;
+            justify-content: center;
+            /* margin-left: 70px; */
+        }
+    }

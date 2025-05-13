@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Burner from "./components/burner";
+import Burner from "./components/Burner";
 import Cards from "./components/cards";
 import ServisesCard from "./components/ServisesCard";
 import ServisesText from "./components/ServisesText";
